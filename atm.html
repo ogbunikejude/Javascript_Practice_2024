@@ -5,20 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week Two Assignment</title>
 </head>
-<body style="text-align: center;">
+<body style="text-align: center;" onload="welcomeAtmUser()">
     <h1 >Judeex Bank ATM Machine</h1>
-    <p>Welcome , Please Enter Your PIN</p>
-    <input type="text" id="pin" /> 
-    <button type="button" onclick="catchAtmPin()" >Submit</button>
+    <p id="username">Welcome </p>
+    <!-- <input type="text" id="pin" /> 
+    <button type="button" onclick="catchAtmPin()" >Submit</button> -->
 
     <div style="margin-top: 3%;">
-        <button type="button" onclick="checkAcctBalance()" >Check Balance</button>
+        <!-- <button type="button" onclick="checkAcctBalance()" >Check Balance</button> -->
+        <button type="button" onclick="checkBalance()" >Check Balance</button>
     </div>
 
     <div>
-        <p>Please Enter Your Withdrawal amount</p>
-    <input type="text" id="with" /> 
-    <button type="button" onclick="withdrawal()" >Submit</button>
+        
+    <!-- <button style="margin-top: 3%;" type="button" onclick="withdrawal()" >Withdraw</button> -->
+    <button style="margin-top: 3%;" type="button" onclick="acctWithdrawal()" >Withdraw</button>
+    </div>
+
+    <div>
+        
+        <button style="margin-top: 3%;" type="button" onclick="depositIntoAccount()" >Deposit</button>
+        </div>
+
+        <div>
+        
+            <button style="margin-top: 3%;" type="button" onclick="transfer()" >Transfer</button>
+            </div>
+
+        <div>
+        
+            <!-- <button style="margin-top: 3%;" type="button" onclick="changePin()" >Change Pin</button> -->
+            <button style="margin-top: 3%;" type="button" onclick="acctPinChange()" >Change Pin</button>
+            </div>
+
+    <div>
+        <p id="msg1" style="background-color: blue; color: red;font-size: large;"></p>
+        <p id="msg2" style="background-color: brown; color: aliceblue; font-size: large;"></p>
     </div>
 
 
